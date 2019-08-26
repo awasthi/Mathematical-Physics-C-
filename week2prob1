@@ -1,0 +1,27 @@
+/* quadratic.cpp */
+/*
+Program to evaluate real roots of quadratic equation
+2
+a x + b x + c = 0
+using quadratic formula
+2
+x = ( -b +/- sqrt(b - 4 a c) ) / (2 a)
+*/
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+float a, b, c, d, x1, x2;
+cout << "a b c";
+cin >> a >> b >> c;
+
+d = sqrt(b * b - 4 * a * c);
+cout << d;
+x1 = (-b + d) / (2 * a);
+x2 = (-b - d) / (2 * a);
+
+cout << "The roots are" << x1 <<x2;
+return 0;
+}
